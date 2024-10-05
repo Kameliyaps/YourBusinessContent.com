@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Content Creation, Digital Marketing, SEO, and Copywriting Services">
+    <title>Your Business Content</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="language-selector">
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('de')">Deutsch</button>
+            <button onclick="changeLanguage('ru')">Русский</button>
+            <button onclick="changeLanguage('bg')">Български</button>
+        </div>
+        <h1 id="title">Welcome to YourBusinessContent.com</h1>
+        <p id="subtitle">Your one-stop solution for content creation, digital marketing, and SEO services.</p>
+    </header>
+
+    <section id="about">
+        <h2 id="about-title">About My Services</h2>
+        <p id="about-description">
+            As an experienced content creator, I’ve helped numerous businesses grow their online presence by delivering high-quality content, digital marketing strategies, and SEO services.
+            I offer tailored content solutions, ranging from blog articles, social media campaigns, to website copywriting. Over the years, I have worked with clients from various industries, ensuring their content stands out and drives engagement.
+            <br><br>
+            <strong>Examples of my work:</strong><br>
+            1. Developed SEO-friendly blog articles for tech startups, resulting in a 30% increase in organic traffic.<br>
+            2. Managed social media campaigns for e-commerce brands, leading to a 40% increase in followers.<br>
+            3. Wrote website content for real estate companies that boosted conversion rates by 25%.<br><br>
+            <strong>Pricing:</strong> My pricing is flexible and depends on the complexity and deadlines of your project. Contact me, and we can discuss a package that fits your needs.
+        </p>
+
+        <div class="service-section">
+            <div class="service">
+                <img src="Content creation.jpg" alt="Content Creation">
+                <h3>Content Creation</h3>
+                <p>High-quality blog posts, social media content, and copywriting that resonates with your audience.</p>
+            </div>
+            <div class="service">
+                <img src="digital marketing – Копие.jpg" alt="Digital Marketing">
+                <h3>Digital Marketing</h3>
+                <p>Boost your brand's visibility with targeted marketing strategies.</p>
+            </div>
+            <div class="service">
+                <img src="seo – Копие.jpg" alt="SEO">
+                <h3>SEO Optimization</h3>
+                <p>Improve your search rankings and drive organic traffic with effective SEO techniques.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 id="experience-title">My Experience</h2>
+        <p id="experience-description">
+            I have over 5 years of experience in content creation, digital marketing, and SEO. I’ve worked with both startups and established companies to develop their online strategies. 
+            I specialize in creating content that not only attracts but also engages and converts. My approach is data-driven, ensuring every piece of content aligns with your marketing goals.
+            <br><br>
+            <strong>Areas of expertise:</strong>
+            <ul>
+                <li>SEO-friendly content writing</li>
+                <li>Social media management</li>
+                <li>Brand storytelling</li>
+                <li>Email marketing campaigns</li>
+            </ul>
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2 id="contact-title">Contact Me</h2>
+        <p id="contact-description">Ready to elevate your content and marketing strategies? Click the button below to send me an email.</p>
+        <button onclick="window.location.href='mailto:k96249411@gmail.com';">Contact Me</button>
+    </section>
+
+    <footer>
+        <p>© 2024 YourBusinessContent.com - All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function changeLanguage(lang) {
+            const elements = {
+                en: {
+                    title: "Welcome to YourBusinessContent.com",
+                    subtitle: "Your one-stop solution for content creation, digital marketing, and SEO services.",
+                    aboutTitle: "About My Services",
+                    aboutDescription: "As an experienced content creator, I’ve helped numerous businesses grow their online presence...",
+                    experienceTitle: "My Experience",
+                    contactTitle: "Contact Me",
+                    contactDescription: "Ready to elevate your content and marketing strategies? Click the button below to send me an email."
+                },
+                de: {
+                    title: "Willkommen bei YourBusinessContent.com",
+                    subtitle: "Ihre Lösung für Content-Erstellung, digitales Marketing und SEO-Dienste.",
+                    aboutTitle: "Über Meine Dienstleistungen",
+                    aboutDescription: "Als erfahrener Content-Ersteller habe ich zahlreichen Unternehmen geholfen, ihre Online-Präsenz zu steigern...",
+                    experienceTitle: "Meine Erfahrung",
+                    contactTitle: "Kontaktieren Sie mich",
+                    contactDescription: "Bereit, Ihre Content- und Marketingstrategien zu verbessern? Klicken Sie auf den Button, um mir eine E-Mail zu senden."
+                },
+                ru: {
+                    title: "Добро пожаловать на YourBusinessContent.com",
+                    subtitle: "Ваше решение для создания контента, цифрового маркетинга и SEO.",
+                    aboutTitle: "О моих услугах",
+                    aboutDescription: "Как опытный создатель контента, я помог многим компаниям улучшить их присутствие в Интернете...",
+                    experienceTitle: "Мой Опыт",
+                    contactTitle: "Свяжитесь со мной",
+                    contactDescription: "Готовы улучшить свои стратегии контента и маркетинга? Нажмите кнопку, чтобы отправить мне письмо."
+                },
+                bg: {
+                    title: "Добре дошли в YourBusinessContent.com",
+                    subtitle: "Вашето решение за създаване на съдържание, дигитален маркетинг и SEO услуги.",
+                    aboutTitle: "За Моите Услуги",
+                    aboutDescription: "Като опитен създател на съдържание, съм помогнал на много бизнеси да разширят онлайн присъствието си...",
+                    experienceTitle: "Моят Опит",
+                    contactTitle: "Свържете се с мен",
+                    contactDescription: "Готови ли сте да подобрите съдържанието и маркетинговите си стратегии? Кликнете на бутона, за да ми изпратите имейл."
+                }
+            };
+
+            document.getElementById('title').innerText = elements[lang].title;
+            document.getElementById('subtitle').innerText = elements[lang].subtitle;
+            document.getElementById('about-title').innerText = elements[lang].aboutTitle;
+            document.getElementById('about-description').innerHTML = elements[lang].aboutDescription;
+            document.getElementById('experience-title').innerText = elements[lang].experienceTitle;
+            document.getElementById('contact-title').innerText = elements[lang].contactTitle;
+            document.getElementById('contact-description').innerText = elements[lang].contactDescription;
+        }
+    </script>
+</body>
+</html>
